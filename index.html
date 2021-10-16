@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&family=Londrina+Shadow&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main-container">
+  <header>
+    <h1>Etch-A-Sketch</h1>
+  </header>
+
+  <main>
+    <div class="gridGroup">
+      <div class="container" id="gridContainer">
+      </div>
+      <div id="sizeContainer">
+        <div id="sizeValue">16 x 16</div>
+        <div id="sizeControl">
+          <label id="sizeLabel" for="size">Size</label>
+          <input type="range" name="size" value="16" min="1" max="64" id="sizeSlider">
+        </div>
+      </div>
+    </div>
+
+    <div id="settingsContainer">
+      <input type="color" id="colorPicker" value="#333333">
+      <button id="colorBtn"><span>Color Mode</span></button>
+      <button id="rainbowBtn"><span>Rainbow Mode</span></button>
+      <button id="darkenBtn"><span>Darken Mode</span></button>
+      <button id="eraserBtn"><span>Eraser Mode</span></button>
+      <button id="resetBtn"><span>Reset Grid</span></button>
+    </div>
+    
+    
+  </main>
+
+  <footer>
+    <p>Victor Lacatus - The Odin Project 2021 &copy;</p>
+  </footer>
+</div>
+  
+<script src="script.js"></script>
+</body>
+</html>
